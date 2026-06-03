@@ -1,7 +1,12 @@
+# This wrangler.toml file is not used for deploying the Pages project.
+# It is needed so that Wrangler can run the d1 commands to create the db and process migrations.
 name = "wildebeest"
 main = "src/index.ts"
 compatibility_date = "2022-12-05"
 compatibility_flags = ["nodejs_compat"]
+
+# Specify your account id here so that all commands run against the correct account.
+# account_id = "<your account id>"
 
 [[d1_databases]]
 binding = "DATABASE"
